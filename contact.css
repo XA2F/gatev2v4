@@ -1,0 +1,138 @@
+* {
+  font-family: arial;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  background-image: url("b13.avif");
+  margin: 0;
+}
+
+#overlay {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  background-color: rgba(46, 44, 44, 0.4);
+}
+
+form {
+  max-width: 550px;
+  width: 100%;
+  background: white;
+  margin: 20vh auto 0 auto;
+  padding: 40px;
+  border-radius: 3px;
+  box-sizing: border-box;
+}
+
+h1 {
+  margin: 0;
+  text-align: center;
+}
+
+label {
+  display: block;
+  margin: 20px 0;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  outline: none;
+  resize: none;
+  border: none;
+  border-bottom: 1px solid brown;
+}
+
+input[type="text"]:focus,
+textarea:focus {
+  border-bottom: 1px solid black;
+}
+
+textarea::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+
+.center {
+  text-align: center;
+}
+
+input[type="submit"] {
+  margin-top: 30px;
+  width: 90%;
+  max-width: 200px;
+  background: linear-gradient(to right, black, brown);
+  color: white;
+  font-size: 17px;
+  cursor: pointer;
+  border-radius: 1px;
+}
+
+.error {
+  color: red;
+}
+
+.error-border {
+  border-bottom: 1px solid red;
+}
+
+#success {
+  color: aqua;
+}
+
+.nav li {
+  color: #ffffff;
+  display: inline-block;
+}
+nav {
+  font-size: 18px;
+  /* margin-left: 1300px; */
+  display: flex;
+  justify-content: space-around;
+  margin-left: 320px;
+}
+
+nav ul {
+  left: 9090909%;
+  margin-right: 400px;
+}
+nav ul li {
+  display: inline-block;
+  line-height: 60px;
+  margin: 0 5px;
+  position: relative;
+}
+nav ul li a {
+  color: rgb(255, 255, 255);
+  font-size: 28px;
+  padding: 7px 13px;
+  border-radius: 3px;
+  text-align: center;
+  /*   border-bottom: 1px solid black; */
+}
+.container nav ul li::after {
+  content: "";
+  height: 3px;
+  width: 0%;
+  background: rgb(0, 0, 0);
+  position: absolute;
+  left: 0;
+  bottom: 5px;
+  transition: 0.5s;
+}
+.container nav ul li:hover::after {
+  width: 100%;
+  background-color: white;
+}
+/* a:active, a:hover{
+  background: #772222;
+  transition:.4s;
+  font-style: italic;
+} */
+
+.container nav ul li a:hover {
+  font-style: italic;
+}
